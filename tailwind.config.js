@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "custom-green": "#1ed760",
+        "custom-green-70": "#037C1EB2",
         "custom-black": "#272727",
       },
     },

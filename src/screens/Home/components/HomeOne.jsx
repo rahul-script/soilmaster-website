@@ -54,7 +54,7 @@ const HomeOne = () => {
       />
       <ParentContainer
         height={"h-screen w-[50%]"}
-        styles={`bg-[#037C1EB2]`}
+        styles={`bg-custom-green-70`}
         child={
           <div className="relative w-full h-full flex items-center justify-center">
             <div className="absolute top-[20%] h-fit w-full flex justify-center">
