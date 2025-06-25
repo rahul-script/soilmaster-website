@@ -8,13 +8,13 @@ const ImageVectorText = ({ imgPath, vectorPath, title, description }) => {
       height={`h-full`}
       child={
         <div
-          className={`relative flex items-center justify-center bg-center bg-cover rounded-3xl`}
+          className={`group relative flex items-center justify-center bg-center bg-cover rounded-3xl`}
           style={{
             backgroundImage: `url(${imgPath})`,
           }}
         >
           {/* Dark layer */}
-          <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-60 rounded-3xl"></div>
 
           {/* Content */}
           <div

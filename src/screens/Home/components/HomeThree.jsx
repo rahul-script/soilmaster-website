@@ -18,11 +18,11 @@ import InfoCard from "../../../components/InfoCard";
 const HomeThree = () => {
   return (
     <ParentContainer
-      height={"h=full"}
+      height={"h-full"}
       width={"w-full"}
       child={
         <div
-          className={`relative h-full, w-full rounded-3xl bg-center bg-cover`}
+          className={`relative h-full w-full rounded-3xl bg-center bg-cover`}
           style={{ backgroundImage: "url('/images/smart_farming.jpg')" }}
         >
           {/* Dark layer */}

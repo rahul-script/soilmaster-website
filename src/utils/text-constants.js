@@ -38,3 +38,5 @@ export const wireless = "Wireless Connectivity";
 
 export const wirelessDes =
   "Get accurate insights into soil conditions at any time.";
+
+export const knowYourSoil = "Know your soil in 4 steps !";
