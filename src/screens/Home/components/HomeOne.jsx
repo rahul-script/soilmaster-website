@@ -1,6 +1,7 @@
 import React from "react";
 import ParentContainer from "../../../components/molecular-components/ParentContainer";
 import { homeDescription, tagLine } from "../../../utils/text-constants";
+import { playstoreUrl } from "../../../utils/constants";
 
 const HomeOne = () => {
   return (
@@ -27,27 +28,29 @@ const HomeOne = () => {
               <p className={`font-normal text-[1rem] `}>{homeDescription}</p>
 
               {/* Download Button */}
-              <div
-                className={`group h-12 w-[15.5rem] border-[0.06rem] border-custom-black rounded-3xl flex flex-row items-center justify-between px-4 cursor-pointer hover:bg-custom-black`}
-                onClick={() => {
-                  //TODO: redirect to download app
-                  console.log("Download App Clicked");
-                }}
-              >
-                <span
-                  className={`uppercase font-normal group-hover:text-white`}
+              <a href={playstoreUrl} target="_blank">
+                <div
+                  className={`group h-12 w-[15.5rem] border-[0.06rem] border-custom-black rounded-3xl flex flex-row items-center justify-between px-4 cursor-pointer hover:bg-custom-black`}
+                  onClick={() => {
+                    //TODO: redirect to download app
+                    console.log("Download App Clicked");
+                  }}
                 >
-                  {"download the app"}
-                </span>
+                  <span
+                    className={`uppercase font-normal group-hover:text-white`}
+                  >
+                    {"download the app"}
+                  </span>
 
-                <div className="rounded-full bg-custom-black group-hover:bg-white p-2">
-                  <img
-                    src="/vectors/diagonal_arrow.svg"
-                    alt="arrow"
-                    className="group-hover:invert"
-                  />
+                  <div className="rounded-full bg-custom-black group-hover:bg-white p-2">
+                    <img
+                      src="/vectors/diagonal_arrow.svg"
+                      alt="arrow"
+                      className="group-hover:invert"
+                    />
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         }
