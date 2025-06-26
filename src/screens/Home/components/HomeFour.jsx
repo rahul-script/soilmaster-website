@@ -14,9 +14,9 @@ const HomeFour = () => {
           style={{ backgroundImage: "url('/images/carousel_bg.jpg')" }}
         >
           <div
-            className={`z-[2] absolute top-[5%] inset-0 flex flex-col items-center justify-center px-24 `}
+            className={`relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 `}
           >
-            <span className={`text-custom-white text-4xl`}>{knowYourSoil}</span>
+            <span className={`text-custom-white text-4xl text-center mb-12`}>{knowYourSoil}</span>
             <Carousel images={images} />
           </div>
         </div>

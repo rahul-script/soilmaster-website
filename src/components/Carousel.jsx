@@ -25,72 +25,71 @@ const Carousel = ({ images = [] }) => {
     <div
       className={`h-full w-full z-[5] relative flex flex-col justify-center items-center gap-5`}
     >
-      <div className={`h-[70vh] w-full mt-4`}>
-        <div className="relative flex items-center justify-center w-full max-w-6xl mx-auto mb-8">
-          {/* Previous Button */}
-          <button
-            onClick={prev}
-            className="absolute left-4 z-20 p-3 rounded-full bg-custom-black/40 hover:bg-custom-black transition-colors duration-200 text-white"
-            aria-label="Previous image"
-          >
-            <img src="/vectors/ep_arrow_left.svg" className="w-6 h-6" />
-          </button>
+      {/* Carousel */}
+      <div className="relative flex items-center justify-center w-full max-w-6xl mx-auto ">
+        {/* Previous Button */}
+        <button
+          onClick={prev}
+          className="absolute left-4 z-20 p-3 rounded-full bg-custom-black/40 hover:bg-custom-black transition-colors duration-200 text-white"
+          aria-label="Previous image"
+        >
+          <img src="/vectors/ep_arrow_left.svg" className="w-6 h-6" />
+        </button>
 
-          {/* Images Container */}
-          <div className="relative flex items-center justify-center space-x-8">
-            {/* Previous Image */}
-            {images.length > 1 && (
-              <div className="hidden md:block transform scale-75 opacity-80 -rotate-12">
-                <div className="h-96 bg-transparent rounded-3xl overflow-hidden">
-                  <img
-                    src={
-                      images[(currentIndex - 1 + images.length) % images.length]
-                        .src
-                    }
-                    alt={
-                      images[(currentIndex - 1 + images.length) % images.length]
-                        .alt
-                    }
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            )}
-
-            {/* Current Image */}
-            <div className="relative transform scale-100 z-10">
-              <div className="h-[28rem] bg-transparent rounded-3xl overflow-hidden">
+        {/* Images Container */}
+        <div className="relative flex items-center justify-center space-x-8">
+          {/* Previous Image */}
+          {images.length > 1 && (
+            <div className="hidden md:block transform scale-75 opacity-80 -rotate-12">
+              <div className="h-96 bg-transparent rounded-3xl overflow-hidden">
                 <img
-                  src={currentImage.src}
-                  alt={currentImage.alt}
+                  src={
+                    images[(currentIndex - 1 + images.length) % images.length]
+                      .src
+                  }
+                  alt={
+                    images[(currentIndex - 1 + images.length) % images.length]
+                      .alt
+                  }
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
+          )}
 
-            {/* Next Image */}
-            {images.length > 1 && (
-              <div className="hidden md:block transform scale-75 opacity-80 rotate-12">
-                <div className="h-96 bg-transparent rounded-3xl overflow-hidden">
-                  <img
-                    src={images[(currentIndex + 1) % images.length].src}
-                    alt={images[(currentIndex + 1) % images.length].alt}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            )}
+          {/* Current Image */}
+          <div className="relative transform scale-100 z-10">
+            <div className="h-[28rem] bg-transparent rounded-3xl overflow-hidden">
+              <img
+                src={currentImage.src}
+                alt={currentImage.alt}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
-          {/* Next Button */}
-          <button
-            onClick={next}
-            className="absolute right-4 z-20 p-3 rounded-full bg-black/20 hover:bg-black/40 transition-colors duration-200 text-white"
-            aria-label="Next image"
-          >
-            <img src="/vectors/ep_arrow_right.svg" className="w-6 h-6" />
-          </button>
+          {/* Next Image */}
+          {images.length > 1 && (
+            <div className="hidden md:block transform scale-75 opacity-80 rotate-12">
+              <div className="h-96 bg-transparent rounded-3xl overflow-hidden">
+                <img
+                  src={images[(currentIndex + 1) % images.length].src}
+                  alt={images[(currentIndex + 1) % images.length].alt}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          )}
         </div>
+
+        {/* Next Button */}
+        <button
+          onClick={next}
+          className="absolute right-4 z-20 p-3 rounded-full bg-black/20 hover:bg-black/40 transition-colors duration-200 text-white"
+          aria-label="Next image"
+        >
+          <img src="/vectors/ep_arrow_right.svg" className="w-6 h-6" />
+        </button>
       </div>
 
       {/* Steps */}
