@@ -4,7 +4,7 @@ import ParentContainer from "./molecular-components/ParentContainer";
 const ImageVectorText = ({ imgPath, vectorPath, title, description }) => {
   return (
     <ParentContainer
-      width={`w-[50%]`}
+      width={``}
       height={`h-full`}
       child={
         <div

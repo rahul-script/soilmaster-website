@@ -4,7 +4,7 @@ import { nutrientDesc, nutrientTitle, waterDesc, waterTitle } from "../../../uti
 
 const HomeTwo = () => {
   return (
-    <div className={`flex flex-row h-full w-[100%]`}>
+    <div className={`flex h-full w-full items-stretch justify-between  `}>
       <ImageVectorText
         imgPath={"/images/nutrition_management.jpg"}
         vectorPath={"/vectors/nutrition.svg"}
