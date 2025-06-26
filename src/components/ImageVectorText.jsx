@@ -4,11 +4,11 @@ import ParentContainer from "./molecular-components/ParentContainer";
 const ImageVectorText = ({ imgPath, vectorPath, title, description }) => {
   return (
     <ParentContainer
-      width={``}
       height={`h-full`}
+      styles="flex justify-center"
       child={
         <div
-          className={`group relative flex items-center justify-center bg-center bg-cover rounded-3xl`}
+          className={`group relative flex items-center bg-center bg-cover rounded-3xl`}
           style={{
             backgroundImage: `url(${imgPath})`,
           }}
@@ -20,8 +20,8 @@ const ImageVectorText = ({ imgPath, vectorPath, title, description }) => {
           <div
             className={`flex flex-col gap-5 items-center justify-center text-center px-20 z-[2]`}
           >
-            <div className={` p-3 rounded-full bg-white`}>
-              <img src={vectorPath} alt="vector" />
+            <div className={` p-4 rounded-full bg-white`}>
+              <img src={vectorPath} alt="vector" className="h-10 w-10" />
             </div>
             <span className="text-white text-lg font-semibold capitalize">
               {title}

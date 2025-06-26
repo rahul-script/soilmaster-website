@@ -60,3 +60,5 @@ export const moto = "Reliable. Scalable. For every farmer, everywhere.";
 
 export const footerTag =
   "Empowering modern farming with precision, simplicity, and smart decisions.";
+
+export const rightsReserved = "© 2025 Scriptanalytica Technologies Pvt. Ltd. All rights reserved.";

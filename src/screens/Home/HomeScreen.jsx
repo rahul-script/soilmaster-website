@@ -12,7 +12,7 @@ const HomeScreen = () => {
       <div className="flex h-screen w-full">
         <HomeOne />
       </div>
-      <div className="flex h-screen w-full">
+      <div className="flex h-[70vh] w-full">
         <HomeTwo />
       </div>
       <div className="flex h-screen w-full">

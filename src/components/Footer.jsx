@@ -1,16 +1,16 @@
 import React from "react";
 import ParentContainer from "./molecular-components/ParentContainer";
-import { footerTag } from "../utils/text-constants";
+import { footerTag, rightsReserved } from "../utils/text-constants";
 
 const Footer = () => {
   return (
     <ParentContainer
       height={"h-fit"}
-      styles={"border"}
+      styles={"border "}
       child={
         <div className="w-full flex flex-col ">
           <div
-            className={`flex w-full flex-row items-end justify-between p-5 rounded-3xl`}
+            className={`flex w-full flex-row items-end justify-between gap-8 px-10 py-5 rounded-3xl`}
           >
             <div className="w-[40%] flex flex-col gap-4">
               {/* logo */}
@@ -23,7 +23,7 @@ const Footer = () => {
               <p className="text-xl font-bold">{footerTag}</p>
             </div>
 
-            <div className="w-[60%] grid grid-rows-3 grid-flow-col  space-y-2 ">
+            <div className="w-[50%] max-w-[60%] grid grid-rows-3 grid-flow-col space-y-2 ">
               {footerContents.map((element, index) => (
                 <div
                   key={index}
@@ -41,8 +41,17 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="h-12 w-full bg-custom-green rounded-b-3xl px-5">
-            
+
+          {/* Bottom Green */}
+          <div className="h-12 w-full flex items-center justify-between bg-custom-green rounded-b-3xl px-10 text-sm">
+            <p>{rightsReserved}</p>
+            <div className={`grid grid-cols-3 grid-flow-row space-x-4 w-fit`}>
+              {
+                impItems.map((element, index) => (
+                  <p key={index} className="cursor-pointer">{element.label}</p>
+                ))
+              }
+            </div>
           </div>
         </div>
       }
@@ -64,4 +73,10 @@ const footerContents = [
   { label: "Press Conferences", link: "", vectorPath: null },
   { label: "Android", link: "", vectorPath: "/vectors/android.svg" },
   { label: "iOS", link: "", vectorPath: "/vectors/ios.svg" },
+];
+
+const impItems = [
+  { label: "Terms of Service", link: "" },
+  { label: "Privacy Policy", link: "" },
+  { label: "Cookies", link: "" },
 ];
