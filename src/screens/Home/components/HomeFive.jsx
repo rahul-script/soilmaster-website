@@ -26,7 +26,7 @@ const HomeFive = () => {
               </span>
               <UnorderedTextList
                 list={censorPoints}
-                elementTextStyling={`text-2xl font-semibold`}
+                elementTextStyling={`text-xl font-semibold`}
               />
             </div>
             <img
