@@ -4,6 +4,7 @@ import HomeTwo from "./components/HomeTwo";
 import HomeThree from "./components/HomeThree";
 import HomeFour from "./components/HomeFour";
 import HomeFive from "./components/HomeFive";
+import HomeSix from "./components/HomeSix";
 
 const HomeScreen = () => {
   return (
@@ -22,6 +23,9 @@ const HomeScreen = () => {
       </div>
       <div className="flex h-screen w-full">
         <HomeFive />
+      </div>
+      <div className="flex w-full">
+        <HomeSix />
       </div>
     </div>
   );
