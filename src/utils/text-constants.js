@@ -40,3 +40,23 @@ export const wirelessDes =
   "Get accurate insights into soil conditions at any time.";
 
 export const knowYourSoil = "Know your soil in 4 steps !";
+
+export const censorTitle = "Soil Master Sensor";
+
+export const censorPoints = [
+  "Real-Time Soil Monitoring",
+  "Accurate pH, Moisture & Temperature Data",
+  "Easy Plug & Play Installation",
+  "Long-Lasting Battery Life",
+  "Weather-Resistant Design",
+  "Wireless Connectivity",
+  "App-Integrated Control",
+  "Supports Multiple Crops",
+  "Low Maintenance",
+  "Compact & Durable Build",
+];
+
+export const moto = "Reliable. Scalable. For every farmer, everywhere.";
+
+export const footerTag =
+  "Empowering modern farming with precision, simplicity, and smart decisions.";

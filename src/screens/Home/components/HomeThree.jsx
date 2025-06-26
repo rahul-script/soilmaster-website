@@ -26,7 +26,7 @@ const HomeThree = () => {
           style={{ backgroundImage: "url('/images/smart_farming.jpg')" }}
         >
           {/* Dark layer */}
-          <div className="absolute inset-0 bg-black opacity-20 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-custom-black opacity-30 rounded-3xl"></div>
 
           {/* Content */}
           <div
