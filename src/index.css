@@ -4,7 +4,7 @@
 
 @layer components {
   .navbar-text-style {
-    @apply text-white font-sans font-normal;
+    @apply font-sans font-normal;
   }
 
   .disable-focus-border {

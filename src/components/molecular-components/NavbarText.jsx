@@ -1,11 +1,18 @@
 import React from "react";
 
-const NavbarText = ({ text = "", link, isCurrent = false, selectedColor = 'text-custom-black', onClick }) => {
+const NavbarText = ({
+  text = "",
+  link,
+  isCurrent = false,
+  textColor = "text-custom-black/60",
+  selectedColor = "text-custom-black",
+}) => {
   return (
     <a
       href={link}
-      onClick={onClick}
-      className={`navbar-text-style ${isCurrent && selectedColor} hover:cursor-pointer hover:underline `}
+      className={`navbar-text-style ${
+        isCurrent ? selectedColor : textColor
+      } hover:cursor-pointer hover:underline hover:${selectedColor}`}
     >
       {text}
     </a>

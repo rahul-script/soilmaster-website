@@ -6,7 +6,6 @@ import AppRoutes from "./router/AppRoutes";
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
       <AppRoutes />
       <Footer />
     </React.Fragment>
