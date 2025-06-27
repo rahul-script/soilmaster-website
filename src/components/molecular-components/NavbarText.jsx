@@ -10,7 +10,7 @@ const NavbarText = ({
   return (
     <a
       href={link}
-      className={`navbar-text-style ${
+      className={`font-sans font-medium text-base ${
         isCurrent ? selectedColor : textColor
       } hover:cursor-pointer hover:underline hover:${selectedColor}`}
     >

@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
+import { aboutUsHeader } from "../../utils/text-constants";
+import HeaderText from "./components/HeaderText";
+import StoryAndTeam from "./components/StoryAndTeam";
 
 const AboutUsScreen = () => {
   return (
-    <div className={`flex flex-col h-full w-full`}>
-      <div className={`h-[40vh] bg-custom-black`}></div>
-    </div>
-  )
-}
+    <div className={`flex flex-col h-full mx-1`}>
+      {/* title text */}
+      <HeaderText />
 
-export default AboutUsScreen
+      {/* image */}
+      <img
+        src="/images/corn-field.png"
+        alt="corn-field"
+        className="h-full w-full rounded-3xl"
+      />
+
+      {/* story */}
+      <StoryAndTeam />
+    </div>
+  );
+};
+
+export default AboutUsScreen;

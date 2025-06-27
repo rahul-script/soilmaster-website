@@ -61,4 +61,47 @@ export const moto = "Reliable. Scalable. For every farmer, everywhere.";
 export const footerTag =
   "Empowering modern farming with precision, simplicity, and smart decisions.";
 
-export const rightsReserved = "© 2025 Scriptanalytica Technologies Pvt. Ltd. All rights reserved.";
+export const rightsReserved =
+  "© 2025 Scriptanalytica Technologies Pvt. Ltd. All rights reserved.";
+
+export const aboutUsHeader = [
+  {
+    text: "Revolutionizing agriculture with ",
+    color: "text-custom-black",
+  },
+  {
+    text: "smart ",
+    color: "text-custom-green-70",
+  },
+  {
+    text: "technology for a ",
+    color: "text-custom-black",
+  },
+  {
+    text: "sustainable ",
+    color:
+      "bg-gradient-to-r from-custom-green-70 to-[#107132] bg-clip-text text-transparent",
+  },
+  {
+    text: "tomorrow.",
+    color: "text-custom-black",
+  },
+];
+
+export const story = [
+  {
+    text: "Farming has always been the backbone of our nation — rooted in tradition, hard work, and trust in the land. But in today’s changing climate and market conditions, farmers need more than just experience. They need data, insights, and technology that works with them, not against them.",
+  },
+  {
+    text: "That’s where Soil Master was born — out of a need to empower every farmer with the tools of tomorrow. Our sensor-based solution and intuitive mobile app bring real-time soil analysis to the palm of your hand. With just a few steps, farmers can now understand their soil's health, choose better crops, and make informed decisions — anytime, anywhere.",
+  },
+  {
+    text: "At Soil Master, we believe in a future where technology and farming grow together. We’re not just building a product; we’re building a movement toward smarter, more sustainable agriculture — made in India, made for the world.",
+  },
+];
+
+export const team = [
+  {
+    text: "Our team is made up of 6 talented architects and BIM/CAD technicians who contribute immensely to the work we do.",
+  },
+];

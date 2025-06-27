@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-  .navbar-text-style {
-    @apply font-sans font-normal;
+  .aboutUs-content-alignment {
+    @apply flex flex-row w-[75%] h-fit items-start justify-start ;
+  }
+
+  .aboutUs-content-title {
+    @apply w-[25%] h-full text-lg font-semibold text-custom-green-70;
+  }
+
+  .aboutUs-content-box {
+    @apply w-[75%] h-fit text-lg font-normal text-custom-black space-y-2;
   }
 
   .disable-focus-border {
@@ -24,10 +32,11 @@
 }
 
 :root {
+  --color-white-background: #f2eed7;
   --font-family-main: "DM Sans";
 }
 
 body {
   font-family: var(--font-family-main);
-  background-color: white;
+  background-color: var(--color-white-background);
 }
