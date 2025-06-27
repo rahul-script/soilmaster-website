@@ -51,6 +51,7 @@ const Carousel = ({ images = [] }) => {
                     images[(currentIndex - 1 + images.length) % images.length]
                       .alt
                   }
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -63,6 +64,7 @@ const Carousel = ({ images = [] }) => {
               <img
                 src={currentImage.src}
                 alt={currentImage.alt}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -75,6 +77,7 @@ const Carousel = ({ images = [] }) => {
                 <img
                   src={images[(currentIndex + 1) % images.length].src}
                   alt={images[(currentIndex + 1) % images.length].alt}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

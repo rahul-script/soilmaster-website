@@ -14,6 +14,7 @@ const ImagesCollage = ({ images = [] }) => {
             key={element.label}
             src={element.imagePath}
             alt={element.label}
+            loading="lazy"
             className={`h-[25rem] w-[20rem] object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-105 `}
           />
         </div>

@@ -13,6 +13,7 @@ const AboutUsScreen = () => {
       <img
         src="/images/corn-field.png"
         alt="corn-field"
+        loading="lazy"
         className="h-full w-full rounded-3xl"
       />
 

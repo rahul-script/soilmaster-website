@@ -16,7 +16,12 @@ const Navbar = () => {
       } flex flex-row z-10 items-center justify-between w-full min-h-24 py-4 pl-5 pr-24 bg-transparent  `}
     >
       <div className="flex flex-row items-center gap-4">
-        <img src="images/logo.png" alt="logo" className={`max-w-20 max-h-20`} />
+        <img
+          src="images/logo.png"
+          loading="lazy"
+          alt="logo"
+          className={`max-w-20 max-h-20`}
+        />
         <span className={`text-xl font-medium text-custom-black `}>
           Soilmaster
         </span>

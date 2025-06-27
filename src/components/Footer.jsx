@@ -15,7 +15,12 @@ const Footer = () => {
             <div className="w-[40%] flex flex-col gap-4">
               {/* logo */}
               <div className={`h-fit w-full flex flex-row items-center gap-2`}>
-                <img src="/images/logo.png" alt="Logo" className="h-16 w-16" />
+                <img
+                  src="/images/logo.png"
+                  loading="lazy"
+                  alt="Logo"
+                  className="h-16 w-16"
+                />
                 <span>Soilmaster</span>
               </div>
 
@@ -33,6 +38,7 @@ const Footer = () => {
                     <img
                       src={element.vectorPath}
                       alt="label"
+                      loading="lazy"
                       className="h-4 w-4"
                     />
                   )}
@@ -46,11 +52,11 @@ const Footer = () => {
           <div className="h-12 w-full flex items-center justify-between bg-custom-green rounded-b-3xl px-10 text-sm">
             <p>{rightsReserved}</p>
             <div className={`grid grid-cols-3 grid-flow-row space-x-4 w-fit`}>
-              {
-                impItems.map((element, index) => (
-                  <p key={index} className="cursor-pointer">{element.label}</p>
-                ))
-              }
+              {impItems.map((element, index) => (
+                <p key={index} className="cursor-pointer">
+                  {element.label}
+                </p>
+              ))}
             </div>
           </div>
         </div>

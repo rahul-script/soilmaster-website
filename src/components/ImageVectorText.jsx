@@ -21,7 +21,12 @@ const ImageVectorText = ({ imgPath, vectorPath, title, description }) => {
             className={`flex flex-col gap-5 items-center justify-center text-center px-20 z-[2]`}
           >
             <div className={` p-4 rounded-full bg-white`}>
-              <img src={vectorPath} alt="vector" className="h-10 w-10" />
+              <img
+                src={vectorPath}
+                alt="vector"
+                loading="lazy"
+                className="h-10 w-10"
+              />
             </div>
             <span className="text-white text-lg font-semibold capitalize">
               {title}

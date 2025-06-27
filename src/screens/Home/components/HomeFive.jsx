@@ -32,6 +32,7 @@ const HomeFive = () => {
             <img
               src="public/images/sensor.jpg"
               alt="Censor"
+              loading="lazy"
               className={`h-full rounded-3xl`}
             />
           </div>

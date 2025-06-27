@@ -8,6 +8,7 @@ const InfoCard = ({ vectorpath, title, desc }) => {
       <img
         src={vectorpath}
         alt="vector"
+        loading="lazy"
         className={`rounded-full bg-white p-3 h-14 w-14`}
       />
       <span className={`text-white font-semibold text-xl mx-1 mt-5`}>

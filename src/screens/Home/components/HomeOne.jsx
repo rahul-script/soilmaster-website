@@ -46,6 +46,7 @@ const HomeOne = () => {
                     <img
                       src="/vectors/diagonal_arrow.svg"
                       alt="arrow"
+                      loading="lazy"
                       className="group-hover:invert"
                     />
                   </div>
@@ -64,11 +65,13 @@ const HomeOne = () => {
               <img
                 src="/images/leaf-bg.png"
                 alt="leaf"
+                loading="lazy"
                 className="z-[1] absolute top-[30%] max-h-[80%] max-w-[80%]"
               />
               <img
                 src="/images/app_screenshot.png"
                 alt="app"
+                loading="lazy"
                 className="z-[2] relative max-h-[45%] max-w-[45%]"
               />
             </div>
