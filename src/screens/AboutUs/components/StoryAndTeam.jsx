@@ -1,5 +1,6 @@
 import React from "react";
 import { story, team } from "../../../utils/text-constants";
+import ImagesCollage from "../../../components/ImagesCollage";
 
 const StoryAndTeam = () => {
   return (
@@ -35,7 +36,9 @@ const StoryAndTeam = () => {
         </div>
 
         {/* Team Images */}
-        <div className={`h-[20vh] border border-black w-[75%]`}></div>
+        <div className={`h-fit w-fit`}>
+          <ImagesCollage images={imagesList} />
+        </div>
       </div>
     </div>
   );
@@ -44,10 +47,10 @@ const StoryAndTeam = () => {
 export default StoryAndTeam;
 
 const imagesList = [
-  {label: "person-one", imagePath: "/images/team/person-one.jpeg"},
-  {label: "person-one", imagePath: "/images/team/person-one"},
-  {label: "person-one", imagePath: "/images/team/person-one"},
-  {label: "person-one", imagePath: "/images/team/person-one"},
-  {label: "person-one", imagePath: "/images/team/person-one"},
-  {label: "person-one", imagePath: "/images/team/person-one"},
+  { label: "person-one", imagePath: "/images/team/person-one.jpg" },
+  { label: "person-two", imagePath: "/images/team/person-two.png" },
+  { label: "person-three", imagePath: "/images/team/person-three.png" },
+  { label: "person-four", imagePath: "/images/team/person-four.png" },
+  { label: "person-five", imagePath: "/images/team/person-five.png" },
+  { label: "person-six", imagePath: "/images/team/person-six.png" },
 ];
