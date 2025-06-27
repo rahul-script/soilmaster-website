@@ -1,5 +1,3 @@
-import React from "react";
-import { aboutUsHeader } from "../../utils/text-constants";
 import HeaderText from "./components/HeaderText";
 import StoryAndTeam from "./components/StoryAndTeam";
 import Blog from "./components/Blog";

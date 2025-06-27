@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className={`flex flex-col h-fit w-full gap-4 items-center`}>
+    <div className={`flex flex-col h-fit w-full gap-4 items-center my-8`}>
       <div className={`w-[75%] flex items-start`}>
         <span className={`aboutUs-content-title`}>{"Blog"}</span>
       </div>
@@ -23,16 +23,16 @@ const Blog = () => {
             </div>
             <div className={`flex flex-col gap-1`}>
               <p
-              className={`text-base font-semibold text-custom-black h-[48px] overflow-hidden text-ellipsis line-clamp-2`}
-            >
-              {element.title}
-            </p>
-            <p className={`text-custom-black/80 text-sm font-normal`}>
-              {element.subtitle}
-            </p>
-            <p className={`text-custom-black/80 text-sm font-normal`}>
-              {element.year}
-            </p>
+                className={`text-base font-semibold text-custom-black h-[48px] overflow-hidden text-ellipsis line-clamp-2`}
+              >
+                {element.title}
+              </p>
+              <p className={`text-custom-black/80 text-sm font-normal`}>
+                {element.subtitle}
+              </p>
+              <p className={`text-custom-black/80 text-sm font-normal`}>
+                {element.year}
+              </p>
             </div>
           </div>
         ))}
@@ -45,31 +45,31 @@ export default Blog;
 
 const blogs = [
   {
-    imagePath: "/images/blogs/one.svg",
+    imagePath: "/images/blogs/one.png",
     title: "1000 for 1000 Affordable Housing Design Competition",
     subtitle: "Shelter Afrique",
     year: "2017",
   },
   {
-    imagePath: "/images/blogs/two.svg",
+    imagePath: "/images/blogs/two.png",
     title: "1000 for 1000 Affordable Housing Design Competition",
     subtitle: "Shelter Afrique",
     year: "2017",
   },
   {
-    imagePath: "/images/blogs/three.svg",
+    imagePath: "/images/blogs/three.png",
     title: "1000 for 1000 Affordable Housing Design Competition",
     subtitle: "Shelter Afrique",
     year: "2017",
   },
   {
-    imagePath: "/images/blogs/four.svg",
+    imagePath: "/images/blogs/four.png",
     title: "1000 for 1000 Affordable Housing Design Competition",
     subtitle: "Shelter Afrique",
     year: "2017",
   },
   {
-    imagePath: "/images/blogs/five.svg",
+    imagePath: "/images/blogs/five.png",
     title: "1000 for 1000 Affordable Housing Design Competition",
     subtitle: "Shelter Afrique",
     year: "2017",
